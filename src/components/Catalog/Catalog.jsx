@@ -1,6 +1,10 @@
 import s from "./Catalog.module.sass";
+import { useState } from "react";
 
 export default function Catalog() {
+  const [isSortOpen, setIsSortOpen] = useState(false);
+  const [activeSort, setActiveSort] = useState("По кол. подписчиков");
+
   return (
     <div className={s.container}>
       <div className={s.header}>
@@ -46,7 +50,10 @@ export default function Catalog() {
             <p className={s.searchText}>Поиск</p>
           </div>
           <div className={s.containers}>
-            <div className={s.sortContainer}>
+            <div
+              className={s.sortContainer}
+              onClick={() => setIsSortOpen(!isSortOpen)}
+            >
               <svg
                 width="18"
                 height="18"
@@ -75,9 +82,38 @@ export default function Catalog() {
                   </linearGradient>
                 </defs>
               </svg>
-              <p className={s.sortText}>По кол. подписчиков</p>
+              <p className={s.sortText}>{activeSort}</p>
+              {isSortOpen && (
+                <div className={s.sortDropdown}>
+                  <div
+                    className={`${s.sortOption} ${
+                      activeSort === "По кол. подписчиков" ? s.active : ""
+                    }`}
+                    onClick={() => {
+                      setActiveSort("По кол. подписчиков");
+                      setIsSortOpen(false);
+                    }}
+                  >
+                    <span>По кол. подписчиков</span>
+                  </div>
+                  <div
+                    className={`${s.sortOption} ${
+                      activeSort === "По алфавитному порядку" ? s.active : ""
+                    }`}
+                    onClick={() => {
+                      setActiveSort("По алф. порядку");
+                      setIsSortOpen(false);
+                    }}
+                  >
+                    <span>По алфавитному порядку</span>
+                  </div>
+                </div>
+              )}
             </div>
-            <div className={s.filterContainer}>
+            <div
+              className={s.filterContainer}
+              onClick={() => navigate("/filter")}
+            >
               <svg
                 width="18"
                 height="18"

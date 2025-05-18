@@ -1,12 +1,15 @@
 import s from "./Nav.module.sass";
-import { useLocation } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 
 export default function Nav() {
   const location = useLocation();
-  const isWeekPage = location.pathname === "/catalog";
+  const navigate = useNavigate();
+  const isWeekPage =
+    location.pathname === "/catalog" || location.pathname === "/";
+  const isNoShowNav = location.pathname === "/filter";
 
   return (
-    <div className={s.container}>
+    <div className={`${s.container} ${isNoShowNav ? s.noShow : ""}`}>
       <div className={s.items}>
         <div className={`${s.itemWeek} ${isWeekPage ? s.active : ""}`}>
           {isWeekPage ? (
@@ -40,7 +43,11 @@ export default function Nav() {
               </defs>
             </svg>
           ) : (
-            <img src="/images/nav/star.svg" alt="home" />
+            <img
+              src="/images/nav/star.svg"
+              alt="home"
+              onClick={() => navigate("/")}
+            />
           )}
           <span>Подборка недели</span>
         </div>

@@ -1,7 +1,6 @@
 .container
     background: #000
     height: 100vh
-
     padding: 10px
     display: flex
     flex-direction: column
@@ -76,6 +75,42 @@
     line-height: 110%
     letter-spacing: -0.01em
     color: #fff
+    position: relative
+    cursor: pointer
+
+.sortDropdown
+    position: absolute
+    top: 100%
+    left: 0
+    margin-top: 8px
+    width: 95%
+    background: #222
+    border-radius: 15px
+    padding: 8px
+    display: flex
+    flex-direction: column
+    gap: 8px
+    box-shadow: 0px 4px 9.1px 0px rgba(0, 0, 0, 0.32)
+    border: 1px solid rgba(206, 186, 148, 0.32)
+
+.sortOption
+    padding: 4px 8px
+    border-radius: 30px
+    cursor: pointer
+    transition: background 0.2s
+
+    &.active
+        background: rgba(124, 124, 124, 0.68)
+
+    &:hover
+        background: rgba(124, 124, 124, 0.8)
+
+    span
+        color: #fff
+        font-family: "Rubik", sans-serif
+        font-weight: 400
+        font-size: 14px
+        line-height: 17px
 
 .filterContainer
     width: 103px
@@ -112,3 +147,5 @@
     gap: 10px
     align-items: center
     justify-content: center
+    img
+        width: 100%
