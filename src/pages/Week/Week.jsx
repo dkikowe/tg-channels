@@ -1,6 +1,13 @@
 import s from "./Week.module.sass";
+import { useNavigate } from "react-router-dom";
 
 export default function Week() {
+  const navigate = useNavigate();
+
+  const handleClick = () => {
+    navigate("/catalog");
+  };
+
   return (
     <div className={s.container}>
       <div className={s.category}>
@@ -47,6 +54,7 @@ export default function Week() {
             width={136}
             height={163}
             alt=""
+            onClick={handleClick}
           />
           <img
             src="/images/main/category1.svg"
