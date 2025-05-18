@@ -15,7 +15,7 @@ function App() {
   useEffect(() => {
     if (window.Telegram?.WebApp) {
       const tg = window.Telegram.WebApp;
-      // tg.requestFullscreen();
+      tg.requestFullscreen();
       tg.disableVerticalSwipes();
       tg.ready();
 
