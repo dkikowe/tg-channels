@@ -1,0 +1,253 @@
+.wrapper
+    width: 95%
+    min-height: 198px
+    background: #222
+    border-radius: 20px
+    position: relative
+    margin: 0 auto
+    box-sizing: border-box
+    border: 1px solid transparent
+    padding: 16px 8px
+    display: flex
+    flex-direction: column
+    justify-content: flex-start
+    box-shadow: 0 0 0 1px rgba(206,186,148,0.24)
+    gap: 10px
+
+    &:before
+        content: ""
+        position: absolute
+        inset: 0
+        border-radius: 20px
+        padding: 1px
+        background: linear-gradient(90deg, rgba(206,186,148,0.32) 0%, rgba(255,255,255,0.16) 100%)
+        -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0)
+        -webkit-mask-composite: xor
+        mask-composite: exclude
+        pointer-events: none
+        z-index: 1
+
+.topRow
+    display: flex
+    flex-direction: row
+    gap: 16px
+    align-items: flex-start
+    margin-bottom: 16px
+
+.avatarWrap
+    width: 110px
+    height: 110px
+    display: flex
+    align-items: center
+    justify-content: center
+
+.avatarBorder
+    width: 110px
+    height: 110px
+    border-radius: 50%
+    background: linear-gradient(90deg, rgba(206,186,148,0.32) 0%, rgba(255,255,255,0.16) 100%)
+    display: flex
+    align-items: center
+    justify-content: center
+    padding: 2px
+
+.avatar
+    width: 106px
+    height: 106px
+    border-radius: 50%
+    object-fit: cover
+    background: #111
+
+.infoBlock
+    display: flex
+    flex-direction: column
+    gap: 10px
+    justify-content: flex-start
+    align-items: flex-start
+    width: 240px
+
+.title
+    font-family: "Rubik", sans-serif
+    font-weight: 700
+    font-size: 24px
+    color: #fff
+    line-height: 110%
+    letter-spacing: -0.01em
+
+.tags
+    display: flex
+    flex-direction: column
+    gap: 8px
+    margin-top: 4px
+.tagBlock
+    display: flex
+    flex-direction: row
+    gap: 8px
+    margin-top: 4px
+
+.tag
+    display: flex
+    align-items: center
+    gap: 4px
+    background: rgba(124,124,124,0.08)
+    border-radius: 10px
+    padding: 4px 8px
+    font-family: "Rubik", sans-serif
+    font-weight: 400
+    font-size: 15px
+    color: #7C7C7C
+    line-height: 110%
+    letter-spacing: -0.01em
+
+.taglang
+    display: flex
+    align-items: center
+    gap: 4px
+
+    border-radius: 10px
+    padding: 4px 8px
+    font-family: "Rubik", sans-serif
+    font-weight: 400
+    font-size: 15px
+    color: #7C7C7C
+    line-height: 110%
+    letter-spacing: -0.01em
+
+.desc
+    font-family: "Rubik", sans-serif
+    font-weight: 400
+    font-size: 16px
+    line-height: 110%
+    letter-spacing: -0.02em
+    color: #fff
+
+.button
+    width: 100%
+    height: 40px
+    margin: 0 auto
+    border: none
+    border-radius: 30px
+    background: linear-gradient(90deg, #f29d4e 0%, #e0524e 42.79%, #af407a 100%)
+    color: #fff
+    font-family: "Rubik", sans-serif
+    font-weight: 700
+    font-size: 16px
+    line-height: 110%
+    letter-spacing: -0.01em
+    cursor: pointer
+    margin-top: 8px
+    display: flex
+    align-items: center
+    justify-content: center
+    transition: opacity 0.2s
+    &:hover
+        opacity: 0.9
+
+.statsBlock
+    width: 95%
+    min-height: 111px
+    background: #222
+    border-radius: 20px
+    position: relative
+    margin: 0px auto 0 auto
+    box-sizing: border-box
+    border: 1px solid transparent
+    box-shadow: 0 0 0 1px rgba(206,186,148,0.24)
+    padding: 16px
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: flex-start
+
+    &:before
+        content: ""
+        position: absolute
+        inset: 0
+        border-radius: 20px
+        padding: 1px
+        background: linear-gradient(90deg, rgba(206,186,148,0.32) 0%, rgba(255,255,255,0.16) 100%)
+        -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0)
+        -webkit-mask-composite: xor
+        mask-composite: exclude
+        pointer-events: none
+        z-index: 1
+
+.statsHeaderRow
+    width: 100%
+    height: 22px
+    display: flex
+    flex-direction: row
+    align-items: center
+    justify-content: space-between
+    gap: 92px
+    margin-bottom: 8px
+
+.statsHeaderBlock
+    display: flex
+    justify-content: center
+    align-items: center
+    gap: 5px
+
+.statsHeaderCol
+    display: flex
+    flex-direction: row
+    align-items: center
+    width: 100%
+    justify-content: space-between
+    gap: 4px
+
+.statsHeaderTitle
+    font-family: "Rubik", sans-serif
+    font-weight: 400
+    font-size: 16px
+    line-height: 110%
+    letter-spacing: -0.01em
+    background: linear-gradient(90deg, #f29d4e 0%, #e0524e 42.79%, #af407a 100%)
+    background-clip: text
+    -webkit-background-clip: text
+    -webkit-text-fill-color: transparent
+    color: #fff
+
+.number
+    color: #fff
+    font-family: "Rubik", sans-serif
+    font-weight: 500
+    font-size: 20px
+    line-height: 110%
+    letter-spacing: -0.02em
+    text-align: right
+    color: #fff
+
+.statsValueRow
+    width: 100%
+    padding: 10px
+    height: 41px
+    display: flex
+    flex-direction: row
+    align-items: flex-start
+    justify-content: space-between
+    gap: 8px
+
+.statsValueCol
+    width: 125.33px
+    display: flex
+    flex-direction: column
+    align-items: flex-start
+    justify-content: flex-start
+    gap: 8px
+
+.statsValueLabel
+    font-family: "Rubik", sans-serif
+    font-weight: 400
+    font-size: 15px
+    color: #7C7C7C
+    line-height: 110%
+    letter-spacing: -0.01em
+
+.statsValueNumber
+    font-family: "Rubik", sans-serif
+    font-weight: 700
+    font-size: 18px
+    color: #fff
+    line-height: 110%
+    letter-spacing: -0.01em

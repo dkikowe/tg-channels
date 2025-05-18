@@ -32,16 +32,22 @@
     font-weight: 400
     line-height: 19px
 
+.dropdownContainer
+    position: relative
+    width: 90%
+
 .themeDropdown
     display: flex
     align-items: center
     justify-content: space-between
     padding: 0px 16px
-    width: 90%
+    width: 100%
     height: 40px
     background: #222
     border-radius: 30px
     cursor: pointer
+    border: 1px solid rgba(255, 255, 255, 0.16)
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
 
     span
         color: #FFFFFF
@@ -53,6 +59,63 @@
     svg
         width: 16px
         height: 16px
+
+.dropdown
+    position: absolute
+    top: 100%
+    left: 0
+    width: 86vw
+    margin-top: 8px
+    background: #222222
+    border: 1px solid rgba(255, 255, 255, 0.16)
+    border-radius: 15px
+    overflow: hidden
+    z-index: 1000
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
+    padding: 8px
+
+.dropdownOption
+    display: flex
+    align-items: center
+    justify-content: space-between
+    padding: 8px
+    color: #FFFFFF
+    font-family: 'Inter', sans-serif
+    font-size: 15px
+    font-weight: 400
+    line-height: 18px
+    cursor: pointer
+    transition: background 0.2s
+    border-radius: 30px
+    margin-bottom: 8px
+
+    &:last-child
+        margin-bottom: 0
+
+    &.active
+        background: rgba(124, 124, 124, 0.68)
+
+    .proBadge
+        display: flex
+        align-items: center
+        justify-content: center
+        width: 32px
+        height: 12px
+
+        border: 1px solid rgba(255, 255, 255, 0.16)
+        border-radius: 20px
+
+        padding: 4px 8px
+        box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25)
+        background: linear-gradient(137deg, #da8207 0%, #dd9318 0.01%, #ffcb3c 23.04%, #ffcb3c 67.88%, #e39c1e 77.88%, #fbc63a 92.31%)
+
+        span
+            font-family: "Rubik", sans-serif
+            font-weight: 400
+            font-size: 13px
+            line-height: 110%
+            letter-spacing: -0.01em
+            color: #764400
 
 .selectedOption
     display: flex

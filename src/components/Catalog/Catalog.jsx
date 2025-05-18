@@ -1,9 +1,23 @@
 import s from "./Catalog.module.sass";
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
+
+const categories = [
+  { id: 1, title: "Новости и СМИ", img: "/images/main/card.svg" },
+  { id: 2, title: "Развлечения и Юмор", img: "/images/main/card.svg" },
+  { id: 3, title: "Познавательное", img: "/images/main/card.svg" },
+];
 
 export default function Catalog() {
   const [isSortOpen, setIsSortOpen] = useState(false);
   const [activeSort, setActiveSort] = useState("По кол. подписчиков");
+  const [search, setSearch] = useState("");
+
+  const navigate = useNavigate();
+
+  const filtered = categories.filter((cat) =>
+    cat.title.toLowerCase().includes(search.toLowerCase())
+  );
 
   return (
     <div className={s.container}>
@@ -47,7 +61,13 @@ export default function Catalog() {
         </div>
         <div className={s.controls}>
           <div className={s.searchContainer}>
-            <p className={s.searchText}>Поиск</p>
+            <input
+              className={s.searchInput}
+              type="text"
+              placeholder="Поиск"
+              value={search}
+              onChange={(e) => setSearch(e.target.value)}
+            />
           </div>
           <div className={s.containers}>
             <div
@@ -147,10 +167,34 @@ export default function Catalog() {
             </div>
           </div>
         </div>
-        <div className={s.cards}>
-          <img src="/images/main/card.svg" width={358} alt="" />
-          <img src="/images/main/card.svg" width={358} alt="" />
-          <img src="/images/main/card.svg" width={358} alt="" />
+        <div className={s.cards} onClick={() => navigate("/channel")}>
+          {filtered.length === 0 ? (
+            <div
+              style={{
+                fontFamily: "Rubik, sans-serif",
+                fontWeight: 400,
+                fontSize: 16,
+                lineHeight: "110%",
+                letterSpacing: "-0.01em",
+                color: "#fff",
+                marginTop: 10,
+                textAlign: "center",
+                width: "100%",
+              }}
+            >
+              По вашему запросу ничего не найдено
+            </div>
+          ) : (
+            filtered.map((cat) => (
+              <img
+                key={cat.id}
+                src={cat.img}
+                onClick={() => navigate("/channel")}
+                width={358}
+                alt=""
+              />
+            ))
+          )}
         </div>
       </div>
     </div>

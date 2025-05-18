@@ -1,0 +1,66 @@
+.switcher
+    width: 95%
+    height: 8px
+    display: flex
+    border-radius: 20px
+    background: linear-gradient(90deg, #f29d4e 0%, #e0524e 42.79%, #af407a 100%)
+    padding: 1px
+    box-sizing: border-box
+    justify-content: center
+    align-items: center
+    margin: 0 auto
+    margin-bottom: 20px
+
+.inner
+    display: flex
+    width: 100%
+    height: 32px
+    border-radius: 19px
+    background: #181818
+    overflow: hidden
+
+.btn
+    flex: 1 1 0
+    height: 100%
+    border: none
+    outline: none
+    background: transparent
+    color: #fff
+    font-family: "Rubik", sans-serif
+    font-size: 16px
+    line-height: 110%
+    letter-spacing: -0.01em
+    font-weight: 400
+    cursor: pointer
+    transition: background 0.3s, color 0.3s
+    position: relative
+    z-index: 1
+    border-radius: 0
+    margin: 0
+    padding: 0
+
+    // Градиентная линия между кнопками
+    & + .btn
+        border-left: 1px solid
+        border-image: linear-gradient(180deg, #f29d4e 0%, #e0524e 42.79%, #af407a 100%) 1
+
+.left
+    border-top-left-radius: 19px
+    border-bottom-left-radius: 19px
+
+.right
+    border-top-right-radius: 19px
+    border-bottom-right-radius: 19px
+
+.active
+    background: linear-gradient(90deg, #f29d4e 0%, #e0524e 42.79%, #af407a 100%)
+    color: #fff
+    font-weight: 500
+    z-index: 2
+    // Скругления только у первой и последней
+    &.left
+        border-top-left-radius: 19px
+        border-bottom-left-radius: 19px
+    &.right
+        border-top-right-radius: 19px
+        border-bottom-right-radius: 19px
