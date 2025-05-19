@@ -10,7 +10,7 @@ export default function Recommend() {
         <div className={s.category}>Новости и СМИ</div>
         <div className={s.card}>
           <div className={s.info}>
-            <img src="/images/home/avatar.png" alt="" />
+            <img src="/images/home/rec.png" alt="" width={70} height={70} />
 
             <div className={s.content}>
               <div className={s.titleCard}>Новости</div>
@@ -62,7 +62,7 @@ export default function Recommend() {
         <div className={s.category}>Новости и СМИ</div>
         <div className={s.card}>
           <div className={s.info}>
-            <img src="/images/home/rec.png" alt="" />
+            <img src="/images/home/rec.png" alt="" width={70} height={70} />
 
             <div className={s.content}>
               <div className={s.titleCard}>Новости</div>
@@ -114,7 +114,7 @@ export default function Recommend() {
         <div className={s.category}>Новости и СМИ</div>
         <div className={s.card}>
           <div className={s.info}>
-            <img src="/images/home/avatar.png" alt="" />
+            <img src="/images/home/rec.png" alt="" width={70} height={70} />
 
             <div className={s.content}>
               <div className={s.titleCard}>Новости</div>
