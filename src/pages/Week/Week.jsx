@@ -50,20 +50,20 @@ export default function Week() {
         </div>
         <div className={s.categories}>
           <img
-            src="/images/main/category.svg"
+            src="/images/main/category.png"
             width={136}
             height={163}
             alt=""
             onClick={handleClick}
           />
           <img
-            src="/images/main/category1.svg"
+            src="/images/main/category1.png"
             width={136}
             height={182}
             alt=""
           />
           <img
-            src="/images/main/category2.svg"
+            src="/images/main/category2.png"
             width={136}
             height={163}
             alt=""
@@ -122,19 +122,25 @@ export default function Week() {
         </div>
         <div className={s.categories}>
           <img
-            src="/images/main/category3.svg"
+            src="/images/main/category3.png"
             width={136}
             height={232}
             alt=""
           />
           <img
-            src="/images/main/category4.svg"
+            src="/images/main/category4.png"
             width={136}
             height={232}
             alt=""
           />
           <img
-            src="/images/main/category5.svg"
+            src="/images/main/category5.png"
+            width={136}
+            height={232}
+            alt=""
+          />
+          <img
+            src="/images/main/category7.png"
             width={136}
             height={232}
             alt=""

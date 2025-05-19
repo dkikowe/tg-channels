@@ -1,102 +1,132 @@
 .container
     width: 100%
-    height: calc(100vh - 80px)
+    min-height: 100vh
+    background: #181818
     display: flex
     flex-direction: column
-    overflow-x: auto
-    background: #000
-    gap: 16px
+    align-items: center
+    padding-top: 80px
 
 .header
     width: 100%
-    padding-top: 100px
     .title
         font-family: "Rubik", sans-serif
         font-weight: 500
         font-size: 24px
         letter-spacing: -0.01em
         color: #fff
+        margin-bottom: 20px
         text-align: center
 
-.card
-    width: 90%
-    max-width: 408px
-    min-height: 138px
-    background: #222
+.cardWrap
+    position: relative
+    width: 100%
+    display: flex
+    justify-content: center
+    margin-top: 20px
+
+.category
+    position: absolute
+    top: -16px
+    left: 50%
+    transform: translateX(-50%)
+    display: flex
+    justify-content: center
+    align-items: center
+    color: #fff
+
     border-radius: 20px
-    border: 1px solid rgba(249, 237, 50, 0.33)
+    padding: 4px 16px
+    box-shadow: 0 2px 8px 0 rgba(0,0,0,0.08)
+    z-index: 2
+    border: none
+    border-radius: 10px
+    padding: 4px
+    width: 139px
+    height: 18px
+    background: #222
+    border: 1px solid #333
+    font-family: "Rubik", sans-serif
+    font-weight: 400
+    font-size: 14px
+    line-height: 110%
+    letter-spacing: -0.02em
+    color: #fff
+
+.card
+    width: 95%
+    min-height: 100px
+    background: #181818
+    border-radius: 20px
+    border: 1px solid rgba(249,237,50,0.33)
+    display: flex
+    flex-direction: column
+    align-items: center
+    padding: 20px
+    box-sizing: border-box
+    position: relative
+    z-index: 1
+    margin-bottom: 20px
+    gap: 10px
+
+.info
+    width: 100%
     display: flex
     flex-direction: row
-    align-items: flex-start
-    margin: 0 auto 0 auto
-    box-sizing: border-box
-    padding: 16px 16px 16px 16px
-    position: relative
-    gap: 16px
-
-.cardAvatarWrap
-    width: 68px
-    height: 68px
-    border-radius: 50%
-    background: linear-gradient(120deg, #cfb77d55 0%, #fff2 100%)
-    display: flex
     align-items: center
-    justify-content: center
-    flex-shrink: 0
+    justify-self: flex-start
+    gap: 10px
 
-.cardAvatar
+.avatar
     width: 64px
     height: 64px
     border-radius: 50%
     object-fit: cover
-    border: 2px solid transparent
-    background: #181818
+    flex-shrink: 0
+    margin-right: 16px
 
-.cardContent
+.content
     flex: 1
     display: flex
     flex-direction: column
-    justify-content: flex-start
-    min-width: 0
+    justify-content: center
+    gap: 10px
 
-.cardTitle
+.titleCard
     font-family: "Rubik", sans-serif
-    font-weight: 700
-    font-size: 28px
-    line-height: 110%
-    letter-spacing: -0.02em
+    font-weight: 500
+    font-size: 20px
+    letter-spacing: -0.01em
     background: linear-gradient(90deg, #f29d4e 0%, #e0524e 42.79%, #af407a 100%)
     background-clip: text
     -webkit-background-clip: text
     -webkit-text-fill-color: transparent
-    margin-bottom: 4px
 
-.cardInfoRow
+.infoRow
     display: flex
     align-items: center
-    gap: 8px
-    margin-bottom: 8px
+    gap: 4px
+    margin-bottom: 0
 
-.cardInfoIcon
+.infoIcon
+    width: 18px
+    height: 18px
     display: flex
     align-items: center
     justify-content: center
-    width: 16px
-    height: 16px
 
-.cardInfoText
-    font-size: 18px
+.infoText
+    font-family: "Rubik", sans-serif
+    font-weight: 400
+    font-size: 14px
+    line-height: 110%
+    letter-spacing: -0.02em
     color: #7c7c7c
-    font-family: "Rubik", sans-serif
-    font-weight: 400
 
-.cardDesc
-    font-size: 17px
-    color: #fff
+.desc
     font-family: "Rubik", sans-serif
     font-weight: 400
-    line-height: 120%
-    margin-top: 4px
-    white-space: pre-line
-    overflow: hidden
-    text-overflow: ellipsis
+    font-size: 14px
+    line-height: 110%
+    letter-spacing: -0.02em
+    color: #fff

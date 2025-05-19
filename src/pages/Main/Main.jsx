@@ -17,17 +17,17 @@ export default function Main() {
       <div className={s.cards}>
         <div className={s.card} onClick={() => navigate("/catalog")}>
           <div className={s.imageWrapper}>
-            <img src="/images/home/category.svg" alt="" />
+            <img src="/images/home/category.png" alt="" />
           </div>
         </div>
         <div className={s.card} onClick={() => navigate("/catalog")}>
           <div className={s.imageWrapper}>
-            <img src="/images/home/category1.svg" alt="" />
+            <img src="/images/home/category1.png" alt="" />
           </div>
         </div>
         <div className={s.card} onClick={() => navigate("/catalog")}>
           <div className={s.imageWrapper}>
-            <img src="/images/home/category2.svg" alt="" />
+            <img src="/images/home/category2.png" alt="" />
           </div>
         </div>
       </div>

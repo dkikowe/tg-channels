@@ -1,12 +1,12 @@
 import s from "./Premium.module.sass";
 import TariffSwitcher from "../Channel/TariffSwitcher";
 import { useState } from "react";
-
+import { useNavigate } from "react-router-dom";
 const prices = [500, 750, 1000];
 
 export default function Premium() {
   const [active, setActive] = useState(0);
-
+  const navigate = useNavigate();
   return (
     <div className={s.container}>
       <div className={s.header}>
@@ -49,7 +49,12 @@ export default function Premium() {
         </p>
       </div>
       <div className={s.proButtonWrap}>
-        <button className={s.proButton}>
+        <button
+          className={s.proButton}
+          onClick={() => {
+            navigate("/");
+          }}
+        >
           <span className={s.proButtonText}>Подключить Pro за</span>
           <span className={s.proButtonPriceBlock}>
             <span className={s.proButtonPrice}>{prices[active]}</span>
