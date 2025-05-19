@@ -3,9 +3,9 @@ import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 
 const categories = [
-  { id: 1, title: "Новости и СМИ", img: "/images/main/card.svg" },
-  { id: 2, title: "Развлечения и Юмор", img: "/images/main/card.svg" },
-  { id: 3, title: "Познавательное", img: "/images/main/card.svg" },
+  { id: 1, title: "Новости и СМИ", img: "/images/main/card.png" },
+  { id: 2, title: "Развлечения и Юмор", img: "/images/main/card.png" },
+  { id: 3, title: "Познавательное", img: "/images/main/card.png" },
 ];
 
 export default function Catalog() {
