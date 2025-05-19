@@ -50,7 +50,8 @@ export default function Nav() {
           ) : (
             <img src="/images/nav/star.svg" alt="home" />
           )}
-          <span>Подборка недели</span>
+          <span>Подборка</span>
+          <span>недели</span>
         </div>
         <div
           className={`${s.item} ${isMainPage ? s.active : ""}`}
