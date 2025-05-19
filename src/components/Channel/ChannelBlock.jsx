@@ -9,7 +9,7 @@ export default function ChannelBlock() {
             <div className={s.avatarBorder}>
               <img
                 className={s.avatar}
-                src="/images/home/avatar.svg"
+                src="/images/home/avatar.png"
                 alt="Аватар"
               />
             </div>
