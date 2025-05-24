@@ -1,6 +1,6 @@
 .container
     background: #000
-    height: 100vh
+    height: calc(100vh - 180px)
     padding: 10px
     display: flex
     flex-direction: column
@@ -163,11 +163,62 @@
     color: #FFFFFF
 
 .cards
-    margin-top: 30px
+    max-height: 47vh
+    overflow-y: auto
+    margin-top: 12px
+
+.card
+    background: #222
+    border-radius: 20px
     display: flex
-    flex-direction: column
-    gap: 10px
     align-items: center
-    justify-content: center
-    img
-        width: 100%
+    padding: 16px
+    margin: 12px 0
+    cursor: pointer
+    transition: background 0.2s ease
+
+.avatar
+    width: 72px
+    height: 72px
+    border-radius: 50%
+    object-fit: cover
+    margin-right: 16px
+
+.content
+    flex: 1
+    color: #fff
+
+.title
+
+    margin-bottom: 4px
+    font-family: "Rubik", sans-serif
+    font-weight: 400
+    font-size: 18px
+    line-height: 110%
+    letter-spacing: -0.02em
+    color: #fff
+
+.description
+    font-size: 14px
+    color: #ccc
+    margin-bottom: 6px
+
+.meta
+    display: flex
+    align-items: center
+    gap: 12px
+
+.metaItem
+    display: flex
+    align-items: center
+
+    font-family: "Rubik", sans-serif
+    font-weight: 400
+    font-size: 14px
+    line-height: 110%
+    letter-spacing: -0.02em
+    color: #7c7c7c
+
+svg
+    margin-right: 6px
+    flex-shrink: 0

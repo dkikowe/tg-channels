@@ -4,8 +4,8 @@ import { useNavigate } from "react-router-dom";
 export default function Week() {
   const navigate = useNavigate();
 
-  const handleClick = () => {
-    navigate("/catalog");
+  const goToCatalog = (category) => {
+    navigate("/catalog", { state: { category } });
   };
 
   return (
@@ -54,13 +54,14 @@ export default function Week() {
             width={136}
             height={163}
             alt=""
-            onClick={handleClick}
+            onClick={() => goToCatalog("Новости")}
           />
           <img
             src="/images/main/category1.png"
             width={136}
             height={182}
             alt=""
+            onClick={() => goToCatalog("Юмор")}
           />
           <img
             src="/images/main/category2.png"
