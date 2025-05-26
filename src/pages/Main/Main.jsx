@@ -1,11 +1,20 @@
-import s from "./Main.module.sass";
+import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
+import s from "./Main.module.sass";
 
 export default function Main() {
   const navigate = useNavigate();
+  const [categories, setCategories] = useState([]);
+
+  useEffect(() => {
+    fetch("/data_main.json")
+      .then((res) => res.json())
+      .then((data) => setCategories(data))
+      .catch((err) => console.error("Ошибка загрузки категорий:", err));
+  }, []);
 
   const handleNavigate = (category) => {
-    navigate(`/catalog`, { state: { category } });
+    navigate("/catalog", { state: { category } });
   };
 
   return (
@@ -19,25 +28,19 @@ export default function Main() {
           </p>
         </div>
       </div>
+
       <div className={s.cards}>
-        <div className={s.card} onClick={() => handleNavigate("Новости")}>
-          <div className={s.imageWrapper}>
-            <img src="/images/home/category.png" alt="" />
+        {categories.map(({ img, category }, index) => (
+          <div
+            key={index}
+            className={s.card}
+            onClick={() => handleNavigate(category)}
+          >
+            <div className={s.imageWrapper}>
+              <img src={img} alt={category} />
+            </div>
           </div>
-        </div>
-        <div className={s.card} onClick={() => handleNavigate("Юмор")}>
-          <div className={s.imageWrapper}>
-            <img src="/images/home/category1.png" alt="" />
-          </div>
-        </div>
-        <div
-          className={s.card}
-          onClick={() => handleNavigate("Познавательное")}
-        >
-          <div className={s.imageWrapper}>
-            <img src="/images/home/category2.png" alt="" />
-          </div>
-        </div>
+        ))}
       </div>
     </div>
   );

@@ -1,0 +1,234 @@
+[
+  {
+    "img": "/images/categories/Новости_и_СМИ.png",
+    "category": "Новости"
+  },
+  {
+    "img": "/images/categories/Развлекательное.png",
+    "category": "Юмор"
+  },
+  {
+    "img": "/images/categories/Познавательное.png",
+    "category": "Познавательные"
+  },
+  {
+    "img": "/images/categories/Кулинария.png",
+    "category": "Кулинария"
+  },
+  {
+    "img": "/images/categories/Путешествия.png",
+    "category": "Путешествия"
+  },
+  {
+    "img": "/images/categories/Фильмы_и_Сериалы.png",
+    "category": "Фильмы и сериалы"
+  },
+  {
+    "img": "/images/categories/Игры.png",
+    "category": "Игры"
+  },
+  {
+    "img": "/images/categories/отдых.png",
+    "category": "Активный отдых"
+  },
+  {
+    "img": "/images/categories/Музыка.png",
+    "category": "Музыка"
+  },
+  {
+    "img": "/images/categories/Блоги.png",
+    "category": "Авторский блог"
+  },
+  {
+    "img": "/images/categories/Наука.png",
+    "category": "Наука и технологии"
+  },
+  {
+    "img": "/images/categories/Блогеры.png",
+    "category": "Блогеры"
+  },
+  {
+    "img": "/images/categories/Литература.png",
+    "category": "Литература"
+  },
+  {
+    "img": "/images/categories/Фото.png",
+    "category": "Фото"
+  },
+  {
+    "img": "/images/categories/Мода.png",
+    "category": "Красота и мода"
+  },
+  {
+    "img": "/images/categories/дизан.png",
+    "category": "Дизайн"
+  },
+  {
+    "img": "/images/categories/маркет.png",
+    "category": "Маркетплейсы"
+  },
+  {
+    "img": "/images/categories/Однострочные.png",
+    "category": "Однострочные"
+  },
+  {
+    "img": "/images/categories/Подслушано.png",
+    "category": "Подслушано"
+  },
+  {
+    "img": "/images/categories/Психология.png",
+    "category": "Психология"
+  },
+  {
+    "img": "/images/categories/Скидки.png",
+    "category": "Халява и скидки"
+  },
+  {
+    "img": "/images/categories/Цитаты.png",
+    "category": "Цитаты"
+  },
+  {
+    "img": "/images/categories/Здоровье.png",
+    "category": "Здоровье"
+  },
+  {
+    "img": "/images/categories/Спорт.png",
+    "category": "Спорт"
+  },
+  {
+    "img": "/images/categories/Гаджеты.png",
+    "category": "Технические каналы"
+  },
+  {
+    "img": "/images/categories/авто.png",
+    "category": "Авто и мото"
+  },
+  {
+    "img": "/images/categories/ремонт.png",
+    "category": "Строительство и ремонт"
+  },
+  {
+    "img": "/images/categories/ит.png",
+    "category": "IT"
+  },
+  {
+    "img": "/images/categories/Инвестиции.png",
+    "category": "Бизнес и финансы"
+  },
+  {
+    "img": "/images/categories/Экономика.png",
+    "category": "Бизнес и финансы"
+  },
+  {
+    "img": "/images/categories/Криптовалюта.png",
+    "category": "Криптовалюты"
+  },
+  {
+    "img": "/images/categories/Старт.png",
+    "category": "Бизнес и финансы"
+  },
+  {
+    "img": "/images/categories/Ставки.png",
+    "category": "Прогнозы и ставки"
+  },
+  {
+    "img": "/images/categories/Эзотерика.png",
+    "category": "Эзотерика"
+  },
+  {
+    "img": "/images/categories/Природа.png",
+    "category": "Природа"
+  },
+  {
+    "img": "/images/categories/Политика.png",
+    "category": "Политика"
+  },
+  {
+    "img": "/images/categories/Telegram.png",
+    "category": "Сервисы"
+  },
+
+  {
+    "img": "/images/categories/Животные.png",
+    "category": "Животные"
+  },
+  {
+    "img": "/images/categories/Недвижимость.png",
+    "category": "Недвижимость"
+  },
+  {
+    "img": "/images/categories/Стикеры.png",
+    "category": "Стикеры"
+  },
+  {
+    "img": "/images/categories/Сад.png",
+    "category": "Сад и огород"
+  },
+  {
+    "img": "/images/categories/Сливы.png",
+    "category": "Сливы"
+  },
+  {
+    "img": "/images/categories/пошл.png",
+    "category": "Пошлое"
+  },
+  {
+    "img": "/images/categories/Другое.png",
+    "category": "Все подряд"
+  },
+  {
+    "img": "/images/categories/экзамены.png",
+    "category": "ЕГЭ и экзамены"
+  },
+  {
+    "img": "/images/categories/Право.png",
+    "category": "Юриспруденция"
+  },
+  {
+    "img": "/images/categories/Религия.png",
+    "category": "Религия"
+  },
+  {
+    "img": "/images/categories/Рукоделие.png",
+    "category": "Рукоделие"
+  },
+  {
+    "img": "/images/categories/реклама.png",
+    "category": "Объявления"
+  }, 
+  {
+    "img": "/images/categories/курсы.png",
+    "category": "Образование"
+  },
+  {
+    "img": "/images/categories/линг.png",
+    "category": "Лингвистика"
+  },
+  {
+    "img": "/images/categories/Книги.png",
+    "category": "Литература"
+  },
+ 
+
+  {
+    "img": "/images/categories/Карьера.png",
+    "category": "Карьера"
+  }
+  
+
+
+
+
+
+  
+  
+
+
+  
+ 
+  
+  
+  
+  
+
+]
